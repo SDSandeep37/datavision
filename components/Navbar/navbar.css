@@ -1,0 +1,23 @@
+.navbarContainer {
+  background-color: var(--color-dark1);
+  width: 100%;
+}
+.navbarLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbarLogo img {
+  width: 320px;
+  padding: 10px;
+}
+.navbarOptions {
+  padding-right: 10px;
+}
+.navbarOptionsItem {
+  transition: var(--transition);
+}
+.navbarOptionsItem:hover {
+  color: var(--color-cyan-200);
+  font-weight: 600;
+}

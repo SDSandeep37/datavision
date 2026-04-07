@@ -1,0 +1,11 @@
+.card {
+  background: var(--gradient);
+  min-width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  height: 350px;
+}
+.cardImage {
+  width: 200px;
+  margin: 20px;
+}

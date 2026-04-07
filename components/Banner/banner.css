@@ -1,0 +1,17 @@
+.bannerContainer {
+  height: calc(100vh - 60px);
+  background-image: url("../../public/banner.png");
+  background-size: cover;
+}
+.bannerButton {
+  background-color: var(--color-dark);
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  transition: var(--transition);
+}
+.bannerButton:hover {
+  background-color: var(--color-dark1);
+  cursor: pointer;
+}
