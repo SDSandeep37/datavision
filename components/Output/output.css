@@ -1,0 +1,33 @@
+.results {
+  width: 90vw;
+  height: 540px;
+  overflow-y: scroll;
+  border: 1px solid var(--color-white);
+}
+.results::-webkit-scrollbar {
+  width: 2px;
+}
+.results::-webkit-scrollbar-track {
+  background-color: var(--color-white);
+}
+.results::-webkit-scrollbar-thumb {
+  background-color: var(--color-highlight);
+}
+.resultInputButton {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-white);
+}
+.userInput {
+  width: 70%;
+  padding: 10px 0 10px 0;
+  outline: none;
+}
+.askButton {
+  width: max-content;
+  background: var(--color-dark1);
+  padding: 10px 20px;
+  font-size: 16px;
+}

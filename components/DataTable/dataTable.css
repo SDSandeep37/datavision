@@ -1,0 +1,14 @@
+.dataTableContainer {
+  margin: 10px;
+}
+.rdt_TableHeader {
+  background-color: var(--color-dark) !important;
+  color: var(--color-white) !important;
+}
+.rdt_Pagination {
+  background-color: var(--color-dark1) !important;
+  color: var(--color-white) !important;
+}
+.firstInsight {
+  padding: 10px;
+}
