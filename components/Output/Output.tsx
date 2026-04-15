@@ -46,10 +46,11 @@ const Output = () => {
     <div className="resultsContainer">
       <div className="results">
         {fileId ? (
-          <>
-            <p>data table to be shown here</p>
-          </>
+          <DataTableFunction />
         ) : (
+          // <>
+          //   <p>data table to be shown here</p>
+          // </>
           <p style={{ padding: "10px" }}>
             Please upload a <strong> .csv </strong> file to start with.
           </p>
