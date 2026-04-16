@@ -3,7 +3,7 @@ import "./results.css";
 
 const Results = () => {
   return (
-    <div className="results flex flex-col justify-center items-center">
+    <div className="result_s flex flex-col justify-center items-center">
       <h1 className="text-3xl font-bold">Sample Insights</h1>
       <p className="text-[14px] text-gray-400">
         Discover trends and key metrics from your data
