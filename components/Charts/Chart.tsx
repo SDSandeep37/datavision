@@ -19,9 +19,17 @@ interface ChartProp {
   data: any;
 }
 const Chart = ({ data }: ChartProp) => {
+  if (!data || !data.result) {
+    return <p>Loading chart...</p>;
+  }
   const result = data.result;
+  if (!result || result.length === 0) {
+    return <p>No chart data available</p>;
+  }
   console.log(result);
-
+  if (!data?.result || !data?.parsedOperations) {
+    return <p>Loading chart...</p>;
+  }
   const { chart, explanation, column, metric } = data.parsedOperations;
 
   const chartType = chart;
@@ -46,11 +54,11 @@ const Chart = ({ data }: ChartProp) => {
         {chartType === "line" && (
           <LineChart data={result}>
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" angle={-45} textAnchor="end" interval={0} />
+            <XAxis dataKey={metric} angle={-45} textAnchor="end" interval={0} />
             <YAxis />
             <Tooltip />
             <Legend />
-            <Line type="monotone" dataKey="marks" stroke="#82ca9d" />
+            <Line type="monotone" dataKey={column} stroke="#82ca9d" />
           </LineChart>
         )}
 
@@ -58,8 +66,8 @@ const Chart = ({ data }: ChartProp) => {
           <PieChart>
             <Pie
               data={result}
-              dataKey="marks"
-              nameKey="name"
+              dataKey={column}
+              nameKey={metric}
               cx="50%"
               cy="50%"
               outerRadius={120}
